@@ -15,7 +15,6 @@ var numJewelsInStones = function(J, S) {
     regString += `${J.charAt(index)}`;
     if (index !== stringLengh - 1)  regString += '|';
   }
-  console.log(regString);
 
   const matchNum = S.match(new RegExp(regString, 'g'));
   if (matchNum !== null) {
@@ -25,9 +24,7 @@ var numJewelsInStones = function(J, S) {
   return result;
 };
 
-
 const J = 'z';
 const S = 'ZZ';
 
 const result = numJewelsInStones(J, S);
-console.log(result);
